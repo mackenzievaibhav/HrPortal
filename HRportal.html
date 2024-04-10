@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale = 1.0">
+    <link rel="icon" href="fav logo.ico">
+    <title>COMPANY HR PORTAL</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(206, 232, 254);
+            font-family: arial, sans-serif;
+        }
+        header,
+        footer {
+            text-align: center;
+            background-color: rgb(148, 178, 204);
+            color: aliceblue;
+            padding:2px;
+        }
+        .navitem {
+            display: inline;
+            padding: 5px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .navitem a {
+            text-decoration: none;
+            color: aliceblue;
+            text-align: center;
+            margin-inline-start: -45px;
+            padding: 20px;
+        }
+        .registerform {
+            width: max-content;
+            margin-left: auto;
+            margin-right: auto;
+            border: 2px solid rgb(148, 178, 204);
+            border-collapse: collapse;
+            padding:0;
+            margin-bottom:1cm;
+            padding-bottom:15px;
+            line-height:30px;
+        }
+        table {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+        }
+        .employtable {
+            text-align: center;
+        }
+        th,
+        td {
+            border: 2px solid rgb(148, 178, 204);
+            padding: 8px;
+        }
+        .contactus {
+            text-align: center;
+        }
+        iframe {
+            margin-left: auto;
+            margin-right: auto;
+            ;
+        }
+        label {
+            width: 125px;
+            display: inline-block;
+            text-align: center;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            margin-left: 32px;
+        }
+        h2 ,p{
+            text-align: center;
+            background-color: rgb(148, 178, 204);
+            color: aliceblue;
+            padding: 0;
+            margin:0;
+        }
+        .contactsupport{
+            text-align: center;
+            background-color: rgb(206, 232, 254);
+            color:#395c60;
+        }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Company Hr Portal</h1>
+        <nav>
+            <ul>
+                <li class="navitem"><a href="#employee-registration">Employee Registration</a></li>
+                <li class="navitem"><a href="#employee-directory">Employee Directory</a></li>
+                <li class="navitem"><a href="#contact-us">contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img src="img.png" alt="html image" style="width : 100%" ;>
+    <section id="employee-registration" class="registerform">
+        <h2>Employee Registration</h2>
+        <p>Fill the below form to register as <em>employee</em>.</p>
+        <forms>
+            <label for="name">Name : </label>
+            <input type="text" id="name" placeholder="Enter your Name"><br><br>
+            <label for="email">Email id : </label>
+            <input type="email" id="email" placeholder="Enter your email"><br><br>
+            <label for="password">Password : </label>
+            <input type="password" id="password" placeholder="Enter your Password"><br><br>
+            <label for="age">Age : </label>
+            <input type="number" id="age" placeholder="Enter your Age"><br><br>
+            <label for="role">Select role : </label>
+            <select id="role">
+                <option>
+                    Software Engineer
+                </option>
+                <option>
+                    Product Manager
+                </option>
+                <option>
+                    Designer
+                </option>
+                <option>
+                    Hr Representative
+                </option>
+            </select><br><br>
+            <label for="joiningdate">Select Joining Date : </label>
+            <input type="date" id="joiningdate"><br><br>
+            <input type="submit" value="submit"><br><br>
+            <input type="reset" value="reset"><br>
+        </forms>
+    </section>
+    <section id="employee-directory" class="employtable">
+        <h2>Employee Directory</h2>
+        <p>Directory of all registered employees</p>
+        <table>
+            <tr>
+                <th>Employee id</th>
+                <th>Name</th>
+                <th>Employee Role</th>
+            </tr>
+            <tr>
+                <td>105</td>
+                <td>Vaibhav Sarkar</td>
+                <td>Software Engineer</td>
+            </tr>
+            <tr>
+                <td>110</td>
+                <td>Raghav Giri</td>
+                <td>Product Manager</td>
+            </tr>
+            <tr>
+                <td>115</td>
+                <td>Malaya Giri</td>
+                <td>Designer</td>
+            </tr>
+        </table>
+    </section>
+    <section id="contact-us" class="contactus">
+        <h2 class="contactsupport">Contact Us</h2>
+        <p class="contactsupport">You can contact us ar company@officialgmail.com or Visit betwwen : 9AM - 6PM </p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.656352366854!2d77.65805117321013!3d12.993817914394564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1136218ea079%3A0xc6bf20ea89abad92!2sGoogle%20Bangalore%20-%20Old%20Madras%20Road!5e0!3m2!1sen!2sin!4v1712720960292!5m2!1sen!2sin"
+            width="530" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <footer>
+        <p>&copy:MackenzieVaibhav</p>
+    </footer>
+</body>
+</html>
